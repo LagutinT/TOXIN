@@ -14,8 +14,28 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
-            template: './src/pages/index.pug',
-            filename: 'app.html'
+            template: './src/pages/main-page/main.pug',
+            filename: 'main.html'
+        }),
+        new HTMLWebpackPlugin({
+            template: './src/pages/log-in-page/log-in-page.pug',
+            filename: 'log-in-page.html'
+        }),
+        new HTMLWebpackPlugin({
+            template: './src/pages/registration-page/registration-page.pug',
+            filename: 'registration.html'
+        }),
+        new HTMLWebpackPlugin({
+            template: './src/pages/room-details-page/room-details-page.pug',
+            filename: 'room-details-page.html'
+        }),
+        new HTMLWebpackPlugin({
+            template: './src/pages/search-room-page/search-room-page.pug',
+            filename: 'search-room-page.html'
+        }),
+        new HTMLWebpackPlugin({
+            template: './src/pages/ui-kit/ui-kit.pug',
+            filename: 'ui-kit.html'
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
@@ -53,7 +73,10 @@ module.exports = {
             },
             {
                 test: /\.pug$/,
-                loader: 'pug-loader'
+                loader: 'pug-loader',
+                options: {
+                    pretty: true
+                }
             }
         ]
     }
