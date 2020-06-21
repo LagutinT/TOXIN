@@ -1,0 +1,107 @@
+@import '../basic-styles/colors';
+$header-color: white;
+$main-font: 'Montserrat';
+
+.header {
+    height: 70px;
+    width: 100%;
+    background-color: $header-color;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1440px;
+}
+
+.container {
+    width: 1160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* header_logo */
+
+.header_logo {
+    margin-left: 140px;
+    padding-top: 15px;
+    height: 70px;
+}
+
+.logo_image {
+    position: relative;
+}
+
+.vector_left {
+    position: absolute;
+    left: 9.41px;
+    top: 15.29px;
+}
+
+.vector_right {
+    position: absolute;
+    left: 21.47px;
+    top: 15.29px;
+}
+
+
+/* header_nav */
+
+.header_nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-menu {
+    width: 466px;
+}
+
+ul  li{
+    display: inline-block;
+
+    a {
+        color: $darkshade50;
+        font-family: $main-font, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+/* header_buttons */
+
+.header_buttons { 
+    display: flex;
+    flex-direction: row;
+    width: 303px;
+
+    a {
+        display: block;
+        font-family: $main-font, sans-serif;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: bold;
+        border-radius: 22px;
+    }
+}
+
+.log_in_button {
+    height: 34px;
+    width: 83px;
+    color: $purple;
+    border: 2px solid $purple;
+    background-color: $white;
+    padding: 9px 20px 10px;
+}
+
+.registration_button {
+    height: 34px;
+    width: 196px;
+    color: $white;
+    background-color: $purple;
+    padding: 9px 20px 10px 19px;
+}
