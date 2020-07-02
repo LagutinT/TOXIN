@@ -7,7 +7,13 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 module.exports = {
     mode: 'development',
     entry: {
-        app: './src/index.js'
+        app: './src/scripts/index.js',
+        'landing-page': './src/scripts/landing-page.js',
+        'log-in-page': './src/scripts/log-in-page.js',
+        'registration-page': './src/scripts/registration-page.js',
+        'room-details-page': './src/scripts/room-details-page.js',
+        'search-room-page': './src/scripts/search-room-page.js',
+        'ui-kit': './src/scripts/ui-kit.js'
     },
     output: {
         filename: '[name].js',
@@ -15,28 +21,34 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
-            template: './src/pages/main-page/main.pug',
-            filename: 'main.html'
+            template: './src/pages/landing-page/landing-page.pug',
+            filename: 'landing-page.html',
+            chunks: ['landing-page']
         }),
         new HTMLWebpackPlugin({
             template: './src/pages/log-in-page/log-in-page.pug',
-            filename: 'log-in-page.html'
+            filename: 'log-in-page.html',
+            chunks: ['log-in-page']
         }),
         new HTMLWebpackPlugin({
             template: './src/pages/registration-page/registration-page.pug',
-            filename: 'registration.html'
+            filename: 'registration.html',
+            chunks: ['registration-page']
         }),
         new HTMLWebpackPlugin({
             template: './src/pages/room-details-page/room-details-page.pug',
-            filename: 'room-details-page.html'
+            filename: 'room-details-page.html',
+            chunks: ['room-details-page']
         }),
         new HTMLWebpackPlugin({
             template: './src/pages/search-room-page/search-room-page.pug',
-            filename: 'search-room-page.html'
+            filename: 'search-room-page.html',
+            chunks: ['sarch-room-page']
         }),
         new HTMLWebpackPlugin({
             template: './src/pages/ui-kit/ui-kit.pug',
-            filename: 'ui-kit.html'
+            filename: 'ui-kit.html',
+            chunks: ['ui-kit']
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({

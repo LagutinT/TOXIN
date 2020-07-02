@@ -1,0 +1,16 @@
+/* landing-page */
+
+@import '../basic-styles/colors';
+@import '../basic-styles/montserrat';
+@import '../basic-styles/quicksand';
+@import '../basic-styles/resetstyles';
+@import '../modules-styles/header';
+
+.landing_main {
+    width: 1440px;
+    margin: 0 auto;
+    height: 830px;
+    background-image: url(D:/Study/TOXIN/src/img/background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

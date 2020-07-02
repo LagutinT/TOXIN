@@ -1,5 +1,0 @@
-import './styles/log-in-page-styles/log-in-page.scss'
-import './styles/main-page-styles/main-page.scss'
-import './styles/registration-page-styles/registration-page.scss'
-import './styles/room-details-page-styles/room-details-page.scss'
-import './styles/search-room-page-styles/search-room-page.scss'

@@ -1,0 +1,26 @@
+/* footer */
+
+.footer {
+    height: 372px;
+    width: 100%;
+}
+
+.footer_container {
+    height:inherit;
+    max-width: 1160px;
+    width: 80.5556%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+/*footer_logo */
+
+.footer_logo {
+    width: 9.11%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
