@@ -2,7 +2,7 @@
 
 @import '../basic-styles/colors';
 @import '../basic-styles/montserrat';
-@import '../basic-styles/quicksand';
+@import '../basic-styles/opensans';
 $header-color: white;
 $main-font: 'Montserrat';
 
@@ -57,7 +57,7 @@ $main-font: 'Montserrat';
 
 /* nav_menu */
 
-.nav_menu {
+.header_nav_menu {
     height: 34px;
     width: 66.293%;
     margin-top: 18px;
@@ -110,12 +110,12 @@ ul  li {
 
 }
 
-.nav_menu_item_1 {
+.header_nav_menu_item_1 {
     width: 5.462%;
     padding-top: 8px;
 }
 
-.nav_menu_item_2 {
+.header_nav_menu_item_2 {
     width: 9.623%;
     padding-top: 8px;
 
@@ -124,17 +124,17 @@ ul  li {
     }
 }
 
-.nav_menu_item_3 {
+.header_nav_menu_item_3 {
     width: 9.363%;
     padding-top: 8px;
 }
 
-.nav_menu_item_4 {
+.header_nav_menu_item_4 {
     width: 8.062%;
     padding-top: 8px;
 }
 
-.nav_menu_item_5 {
+.header_nav_menu_item_5 {
     width: 15.085%;
     padding-top: 8px;
 
@@ -143,7 +143,7 @@ ul  li {
     }
 }
 
-.log_in_button {
+.header_log_in_button {
     height: inherit;
     width: 11.313%;
     border: 2px solid $purple;
@@ -159,7 +159,7 @@ ul  li {
 
 }
 
-.registration_button {
+.header_registration_button {
     height: inherit;
     width: 25.488%;
     background: $purple_gradient;
@@ -173,7 +173,7 @@ ul  li {
     }
 }
 
-.log_in_button a, .registration_button a {
+.header_log_in_button a, .header_registration_button a {
     font-family: $main-font;
     font-size: 12px;
     line-height: 15px;

@@ -1,17 +1,27 @@
 /* footer */
 
+@import '../basic-styles/colors';
+
 .footer {
-    height: 372px;
+    height: 443px;
     width: 100%;
 }
 
-.footer_container {
+.footer_widgets_container, .footer_copyright_ber_container {
     height:inherit;
     max-width: 1160px;
     width: 80.5556%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
+}
+
+/* .footer_widgets */ 
+
+.footer_widgets {
+    height: 372px;
+    width: inherit;
+    background: white;
 }
 
 /*footer_logo */
@@ -22,5 +32,28 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+/* .footer_copyright_bar */
+
+.footer_copyright_bar {
+    height: 70px;
+    width: inherit;
+    background: white;
+    border-top: 1px solid #E5E5E5;
+    justify-content: flex-start;
+    align-items: center;
+
+    p {
+        display: flex;
+        width: 31.638%;
+        height: 18px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $darkshade75;
+    }
 }
 

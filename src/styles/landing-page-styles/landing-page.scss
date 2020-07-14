@@ -2,15 +2,17 @@
 
 @import '../basic-styles/colors';
 @import '../basic-styles/montserrat';
-@import '../basic-styles/quicksand';
+@import '../basic-styles/opensans';
 @import '../basic-styles/resetstyles';
 @import '../modules-styles/header';
+@import '../modules-styles/footer';
 
 .landing_main {
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
     height: 830px;
     background-image: url(D:/Study/TOXIN/src/img/background.png);
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: 100%;
 }

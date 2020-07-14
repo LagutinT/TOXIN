@@ -1,0 +1,13 @@
+form.log_in_form(action="#")
+    .log_in_form_title
+        h1 Войти
+    input.log_in_form_name(type="text" name="username" method="post" placeholder="Email")
+    input.log_in_form_pass(type="password" name="userpassword" method="post" placeholder="Пароль") 
+    button.log_in_form_input_button(type="submit")
+        a(href="#") Войти
+        span(class="material-icons") arrow_forward
+    .log_in_form_footer
+        p.log_in_form_footer_text Нет аккаунта на Toxin?
+        .log_in_form_footer_create_button
+            a(href="#") Создать
+
