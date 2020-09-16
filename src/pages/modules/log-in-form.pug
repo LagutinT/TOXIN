@@ -1,8 +1,8 @@
-form.log_in_form(action="#")
+form.log_in_form(action="#" name="logInForm")
     .log_in_form_title
         h1 Войти
-    input.log_in_form_name(type="text" name="username" method="post" placeholder="Email")
-    input.log_in_form_pass(type="password" name="userpassword" method="post" placeholder="Пароль") 
+    input.log_in_form_mail(type="text" name="userMail" method="get" placeholder="Email")
+    input.log_in_form_pass(type="password" name="userPassword" method="get" placeholder="Пароль") 
     button.log_in_form_input_button(type="submit")
         a(href="#") Войти
         span(class="material-icons") arrow_forward

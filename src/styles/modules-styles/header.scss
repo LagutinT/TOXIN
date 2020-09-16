@@ -1,8 +1,5 @@
 /* header */
 
-@import '../basic-styles/colors';
-@import '../basic-styles/montserrat';
-@import '../basic-styles/opensans';
 $header-color: white;
 $main-font: 'Montserrat';
 
@@ -10,11 +7,11 @@ $main-font: 'Montserrat';
     height: 69px;
     width: 100%;
     background-color: $header-color;
+    box-shadow: 0px 10px 20px $darkshade5;
 }
 
 .header_container {
     height:inherit;
-    max-width: 1160px;
     width: 80.5556%;
     margin: 0 auto;
     display: flex;
@@ -70,6 +67,7 @@ ul  li {
     display: flex;
     flex-direction: row;
     height: 34px;
+    cursor: pointer;
 
     a {
         display: flex;
@@ -152,11 +150,16 @@ ul  li {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 
     a {
         color: $purple;
     }
 
+}
+
+.header_log_in_button:hover {
+    opacity: 0.5;
 }
 
 .header_registration_button {
@@ -167,10 +170,15 @@ ul  li {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 
     a { 
         color: $white;
     }
+}
+
+.header_registration_button:hover {
+    opacity: 0.5;
 }
 
 .header_log_in_button a, .header_registration_button a {
@@ -181,3 +189,7 @@ ul  li {
     font-style: normal;
     font-weight: bold;
 }
+
+
+
+

@@ -1,7 +1,5 @@
 /* footer */
 
-@import '../basic-styles/colors';
-
 .footer {
     height: 443px;
     width: 100%;
@@ -9,7 +7,6 @@
 
 .footer_widgets_container, .footer_copyright_bar_container {
     height:inherit;
-    max-width: 1160px;
     width: 80.5556%;
     margin: 0 auto;
     display: flex;
@@ -88,6 +85,7 @@
         line-height: 15px;
         text-transform: uppercase;
         color: $darkshade100;
+        cursor: pointer;
     }
 
     .footer_nav_menu_item_2, .footer_nav_menu_item_3, .footer_nav_menu_item_4, .footer_nav_menu_item_5 {
@@ -99,6 +97,7 @@
         font-size: 14px;
         line-height: 17px;
         color: $darkshade50;
+        cursor: pointer;
     }
 
     .footer_nav_menu_item_2 {
@@ -142,6 +141,7 @@
         line-height: 15px;
         text-transform: uppercase;
         color: $darkshade100;
+        cursor: pointer;
     }
 
     .footer_about_us_item_2, .footer_about_us_item_3, .footer_about_us_item_4, .footer_about_us_item_5 {
@@ -153,6 +153,7 @@
         font-size: 14px;
         line-height: 17px;
         color: $darkshade50;
+        cursor: pointer;
     }
 
     .footer_about_us_item_2 {
@@ -196,6 +197,7 @@
         line-height: 15px;
         text-transform: uppercase;
         color: $darkshade100;
+        cursor: pointer;
     }
 
     .footer_support_service_item_2, .footer_support_service_item_3, .footer_support_service_item_4 {
@@ -207,6 +209,7 @@
         font-size: 14px;
         line-height: 17px;
         color: $darkshade50;
+        cursor: pointer;
     }
 
     .footer_support_service_item_2 {
@@ -261,7 +264,7 @@
         width: 100%;
         height: 44px;
         background: white;
-        border: 1px solid rgba(31, 32, 65, 0.25);
+        border: 1px solid $darkshade25;
         box-sizing: border-box;
         border-radius: 4px;
         display: flex;
@@ -280,7 +283,7 @@
             font-weight: normal;
             font-size: 14px;
             line-height: 24px;
-            color: rgba(31, 32, 65, 0.25);
+            color: $darkshade25;
         }
 
         button {
@@ -288,6 +291,7 @@
             height: 40px;
             border-radius: 4px;
             background: white;
+            cursor: pointer;
         }
     }
 
@@ -341,5 +345,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
     }
 }

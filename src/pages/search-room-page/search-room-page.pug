@@ -7,4 +7,112 @@ html(lang="ru")
         link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
     body
         include ../modules/header
+        main.search_room_main
+            .search_room_main_conteiner
+                .side_bar
+                    mixin checkbox
+                            input(type="checkbox")
+                            .check_arrow
+                                svg(width='10' height='11' viewbox='0 0 10 11' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                    path(d='M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z' fill='url(#paint_linear)')
+                                    path(d='M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z' fill='url(#paint_linear)')
+                                    defs
+                                        lineargradient#paint_linear(x1='7.82835' y1='2.28636' x2='2.1715' y2='7.94321' gradientunits='userSpaceOnUse')
+                                            stop(stop-color='#BC9CFF')
+                                            stop(offset='1' stop-color='#8BA4F9')
+                    .dates_of_stay
+                        h2 даты пребывания в отеле
+                    .number_of_guests
+                        h2 гости
+                    .price_range
+                        h2 диапазон цены
+                    .checkbox_buttons
+                        h2 Checkbox Buttons
+                        label.checkbox_buttons_item
+                            +checkbox
+                            span Можно курить
+                        label.checkbox_buttons_item
+                            +checkbox
+                            span Можно с питомцами
+                        label.checkbox_buttons_item
+                            +checkbox
+                            span Можно пригласить гостей (до 10 человек)
+                    .availability
+                        h2 доступность
+                        label.availability_item
+                            +checkbox
+                            .availability_item_description
+                                p Широкий коридор
+                                p Ширина коридоров в номере не менее 91 см.
+                        label.availability_item
+                            +checkbox
+                            .availability_item_description
+                                p Помощник для инвалидов
+                                p На 1 этаже вас встретит специалист  и проводит до номера.
+                    .room_amenities
+                        h2 удобства номера
+                    .additional_facilities 
+                        .additional_facilities_dropdown
+                            h2 дополнительные удобства
+                            button.additional_facilities_dropdown_button
+                                span(class="material-icons") expand_more
+                            .additional_facilities_dropdown_list
+                                label.list_item
+                                    +checkbox
+                                    span Завтрак
+                                label.list_item
+                                    +checkbox
+                                    span Письменный стол
+                                label.list_item
+                                    +checkbox
+                                    span Стул для кормления
+                                label.list_item
+                                    +checkbox
+                                    span Кроватка
+                                label.list_item
+                                    +checkbox
+                                    span Телевизор
+                                label.list_item
+                                    +checkbox
+                                    span Шампунь
+                                label.list_item
+                                    +checkbox
+                                    span Телевизор
+                                label.list_item
+                                    +checkbox
+                                    span Шампунь
+                .available_rooms
+                    h1 Номера, которые мы для вас подобрали
+                    .list_of_rooms
+                        mixin room(number, price, users_reviews)
+                            .room
+                                .room_img
+                                    .expand_more
+                                        span(class="material-icons") chevron_left
+                                        span(class="material-icons") chevron_right
+                                .room_description
+                                    .room_description_container
+                                        .room_description_header
+                                            .number
+                                                span(lang="en")= number 
+                                                span люкс
+                                            .price
+                                                span= price
+                                        .room_description_footer
+                                            .rating
+                                            .reviews
+                                                span= users_reviews
+                        +room('№ 888', '9 990₽ в сутки', '145 Отзывов')
+                        +room('№ 840', '9 900₽ в сутки', '65 Отзывов')
+                        +room('№ 980', '8 500₽ в сутки', '35 Отзывов')
+                        +room('№ 856', '7 300₽ в сутки', '19 Отзывов')
+                        +room('№ 740', '6 000₽ в сутки', '44 Отзывов')
+                        +room('№ 982', '5 800₽ в сутки', '56 Отзывов')
+                        +room('№ 678', '5 500₽ в сутки', '45 Отзывов')
+                        +room('№ 450', '5 300₽ в сутки', '39 Отзывов')
+                        +room('№ 350', '5 000₽ в сутки', '77 Отзывов')
+                        +room('№ 666', '5 000₽ в сутки', '25 Отзывов')
+                        +room('№ 444', '5 000₽ в сутки', '15 Отзывов')
+                        +room('№ 352', '5 000₽ в сутки', '55 Отзывов')
+                    .page_number
         include ../modules/footer

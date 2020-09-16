@@ -64,7 +64,47 @@
     </ul>
   </div>
 </header>
-    <main class="registration_main"></main>
+    <main class="registration_main">
+      <div class="registration_main_container">
+<form class="registration_form" action="#" name="registrationForm">
+  <div class="registration_form_container">
+    <div class="registration_form_title">
+      <h1>Регистрация аккаунта</h1>
+    </div>
+    <input class="registration_form_name" type="text" name="userName" method="get" placeholder="Имя">
+    <input class="registration_form_surname" type="text" name="userSurname" method="get" placeholder="Фамилия">
+    <div class="registration_form_gender">
+      <div class="gender_man">
+        <input type="radio" name="userGender" value="man"><span>Мужчина</span>
+      </div>
+      <div class="gender_woman">
+        <input type="radio" name="userGender" value="woman"><span>Женщина</span>
+      </div>
+    </div>
+    <div class="registration_form_birthday">
+      <h2>дата рождения</h2>
+      <input class="birthday_field" type="text" name="userBirthday" method="get" placeholder="ДД.ММ.ГГГГ">
+    </div>
+    <div class="registration_form_log_in_information">
+      <h2>данные для входа в сервис</h2>
+      <input class="user_mail" type="text" name="userMail" method="get" placeholder="Email">
+      <input class="user_password" type="password" name="userPassword" method="get" placeholder="Пароль">
+    </div>
+    <div class="registration_form_special_offers">
+      <div class="special_offers_switch_button">
+        <input class="checkbox" type="checkbox">
+      </div>
+      <p>Получать спецпредложения</p>
+    </div>
+    <button class="registration_form_payment_button" type="submit"><a href="#">перейти к оплате</a><span class="material-icons">arrow_forward</span></button>
+    <div class="registration_form_footer">
+      <p class="registration_form_footer_text">Уже есть аккаунт на Toxin</p>
+      <button class="registration_form_footer_log_in_button"><a href="#">войти</a></button>
+    </div>
+  </div>
+</form>
+      </div>
+    </main>
 <footer class="footer">
   <div class="footer_widgets">
     <div class="footer_widgets_container">

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOXIN</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  </head>
+  <link href="search-room-page.css" rel="stylesheet"></head>
   <body>
 <header class="header">
   <div class="header_container">
@@ -64,6 +64,451 @@
     </ul>
   </div>
 </header>
+    <main class="search_room_main">
+      <div class="search_room_main_conteiner">
+        <div class="side_bar">
+          <div class="dates_of_stay">
+            <h2>даты пребывания в отеле</h2>
+          </div>
+          <div class="number_of_guests">
+            <h2>гости</h2>
+          </div>
+          <div class="price_range">
+            <h2>диапазон цены</h2>
+          </div>
+          <div class="checkbox_buttons">
+            <h2>Checkbox Buttons</h2>
+            <label class="checkbox_buttons_item">
+                        <input type="checkbox">
+                        <div class="check_arrow">
+                          <svg width="10" height="11" viewbox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint_linear)"></path>
+                            <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint_linear)"></path>
+                            <defs>
+                              <lineargradient id="paint_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientunits="userSpaceOnUse">
+                                <stop stop-color="#BC9CFF"></stop>
+                                <stop offset="1" stop-color="#8BA4F9"></stop>
+                              </lineargradient>
+                            </defs>
+                          </svg>
+                        </div><span>Можно курить</span>
+            </label>
+            <label class="checkbox_buttons_item">
+                        <input type="checkbox">
+                        <div class="check_arrow">
+                          <svg width="10" height="11" viewbox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint_linear)"></path>
+                            <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint_linear)"></path>
+                            <defs>
+                              <lineargradient id="paint_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientunits="userSpaceOnUse">
+                                <stop stop-color="#BC9CFF"></stop>
+                                <stop offset="1" stop-color="#8BA4F9"></stop>
+                              </lineargradient>
+                            </defs>
+                          </svg>
+                        </div><span>Можно с питомцами</span>
+            </label>
+            <label class="checkbox_buttons_item">
+                        <input type="checkbox">
+                        <div class="check_arrow">
+                          <svg width="10" height="11" viewbox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint_linear)"></path>
+                            <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint_linear)"></path>
+                            <defs>
+                              <lineargradient id="paint_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientunits="userSpaceOnUse">
+                                <stop stop-color="#BC9CFF"></stop>
+                                <stop offset="1" stop-color="#8BA4F9"></stop>
+                              </lineargradient>
+                            </defs>
+                          </svg>
+                        </div><span>Можно пригласить гостей (до 10 человек)</span>
+            </label>
+          </div>
+          <div class="availability">
+            <h2>доступность</h2>
+            <label class="availability_item">
+                        <input type="checkbox">
+                        <div class="check_arrow">
+                          <svg width="10" height="11" viewbox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint_linear)"></path>
+                            <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint_linear)"></path>
+                            <defs>
+                              <lineargradient id="paint_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientunits="userSpaceOnUse">
+                                <stop stop-color="#BC9CFF"></stop>
+                                <stop offset="1" stop-color="#8BA4F9"></stop>
+                              </lineargradient>
+                            </defs>
+                          </svg>
+                        </div>
+              <div class="availability_item_description">
+                <p>Широкий коридор</p>
+                <p>Ширина коридоров в номере не менее 91 см.</p>
+              </div>
+            </label>
+            <label class="availability_item">
+                        <input type="checkbox">
+                        <div class="check_arrow">
+                          <svg width="10" height="11" viewbox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint_linear)"></path>
+                            <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint_linear)"></path>
+                            <defs>
+                              <lineargradient id="paint_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientunits="userSpaceOnUse">
+                                <stop stop-color="#BC9CFF"></stop>
+                                <stop offset="1" stop-color="#8BA4F9"></stop>
+                              </lineargradient>
+                            </defs>
+                          </svg>
+                        </div>
+              <div class="availability_item_description">
+                <p>Помощник для инвалидов</p>
+                <p>На 1 этаже вас встретит специалист  и проводит до номера.</p>
+              </div>
+            </label>
+          </div>
+          <div class="room_amenities">
+            <h2>удобства номера</h2>
+          </div>
+          <div class="additional_facilities"> 
+            <div class="additional_facilities_dropdown">
+              <h2>дополнительные удобства</h2>
+              <button class="additional_facilities_dropdown_button"><span class="material-icons">expand_more</span></button>
+              <div class="additional_facilities_dropdown_list">
+                <label class="list_item">
+                            <input type="checkbox">
+                            <div class="check_arrow">
+                              <svg width="10" height="11" viewbox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint_linear)"></path>
+                                <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint_linear)"></path>
+                                <defs>
+                                  <lineargradient id="paint_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientunits="userSpaceOnUse">
+                                    <stop stop-color="#BC9CFF"></stop>
+                                    <stop offset="1" stop-color="#8BA4F9"></stop>
+                                  </lineargradient>
+                                </defs>
+                              </svg>
+                            </div><span>Завтрак</span>
+                </label>
+                <label class="list_item">
+                            <input type="checkbox">
+                            <div class="check_arrow">
+                              <svg width="10" height="11" viewbox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint_linear)"></path>
+                                <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint_linear)"></path>
+                                <defs>
+                                  <lineargradient id="paint_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientunits="userSpaceOnUse">
+                                    <stop stop-color="#BC9CFF"></stop>
+                                    <stop offset="1" stop-color="#8BA4F9"></stop>
+                                  </lineargradient>
+                                </defs>
+                              </svg>
+                            </div><span>Письменный стол</span>
+                </label>
+                <label class="list_item">
+                            <input type="checkbox">
+                            <div class="check_arrow">
+                              <svg width="10" height="11" viewbox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint_linear)"></path>
+                                <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint_linear)"></path>
+                                <defs>
+                                  <lineargradient id="paint_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientunits="userSpaceOnUse">
+                                    <stop stop-color="#BC9CFF"></stop>
+                                    <stop offset="1" stop-color="#8BA4F9"></stop>
+                                  </lineargradient>
+                                </defs>
+                              </svg>
+                            </div><span>Стул для кормления</span>
+                </label>
+                <label class="list_item">
+                            <input type="checkbox">
+                            <div class="check_arrow">
+                              <svg width="10" height="11" viewbox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint_linear)"></path>
+                                <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint_linear)"></path>
+                                <defs>
+                                  <lineargradient id="paint_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientunits="userSpaceOnUse">
+                                    <stop stop-color="#BC9CFF"></stop>
+                                    <stop offset="1" stop-color="#8BA4F9"></stop>
+                                  </lineargradient>
+                                </defs>
+                              </svg>
+                            </div><span>Кроватка</span>
+                </label>
+                <label class="list_item">
+                            <input type="checkbox">
+                            <div class="check_arrow">
+                              <svg width="10" height="11" viewbox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint_linear)"></path>
+                                <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint_linear)"></path>
+                                <defs>
+                                  <lineargradient id="paint_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientunits="userSpaceOnUse">
+                                    <stop stop-color="#BC9CFF"></stop>
+                                    <stop offset="1" stop-color="#8BA4F9"></stop>
+                                  </lineargradient>
+                                </defs>
+                              </svg>
+                            </div><span>Телевизор</span>
+                </label>
+                <label class="list_item">
+                            <input type="checkbox">
+                            <div class="check_arrow">
+                              <svg width="10" height="11" viewbox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint_linear)"></path>
+                                <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint_linear)"></path>
+                                <defs>
+                                  <lineargradient id="paint_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientunits="userSpaceOnUse">
+                                    <stop stop-color="#BC9CFF"></stop>
+                                    <stop offset="1" stop-color="#8BA4F9"></stop>
+                                  </lineargradient>
+                                </defs>
+                              </svg>
+                            </div><span>Шампунь</span>
+                </label>
+                <label class="list_item">
+                            <input type="checkbox">
+                            <div class="check_arrow">
+                              <svg width="10" height="11" viewbox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint_linear)"></path>
+                                <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint_linear)"></path>
+                                <defs>
+                                  <lineargradient id="paint_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientunits="userSpaceOnUse">
+                                    <stop stop-color="#BC9CFF"></stop>
+                                    <stop offset="1" stop-color="#8BA4F9"></stop>
+                                  </lineargradient>
+                                </defs>
+                              </svg>
+                            </div><span>Телевизор</span>
+                </label>
+                <label class="list_item">
+                            <input type="checkbox">
+                            <div class="check_arrow">
+                              <svg width="10" height="11" viewbox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.46439 4.40768L5.70703 8.65032L4.29282 10.0645L0.0501771 5.82189L1.46439 4.40768Z" fill="url(#paint_linear)"></path>
+                                <path d="M8.53546 2.99347L9.94967 4.40768L4.29282 10.0645L2.8786 8.65032L8.53546 2.99347Z" fill="url(#paint_linear)"></path>
+                                <defs>
+                                  <lineargradient id="paint_linear" x1="7.82835" y1="2.28636" x2="2.1715" y2="7.94321" gradientunits="userSpaceOnUse">
+                                    <stop stop-color="#BC9CFF"></stop>
+                                    <stop offset="1" stop-color="#8BA4F9"></stop>
+                                  </lineargradient>
+                                </defs>
+                              </svg>
+                            </div><span>Шампунь</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="available_rooms">
+          <h1>Номера, которые мы для вас подобрали</h1>
+          <div class="list_of_rooms">
+                        <div class="room">
+                          <div class="room_img">
+                            <div class="expand_more"><span class="material-icons">chevron_left</span><span class="material-icons">chevron_right</span></div>
+                          </div>
+                          <div class="room_description">
+                            <div class="room_description_container">
+                              <div class="room_description_header">
+                                <div class="number"><span lang="en">№ 888</span><span>люкс</span></div>
+                                <div class="price"><span>9 990₽ в сутки</span></div>
+                              </div>
+                              <div class="room_description_footer">
+                                <div class="rating"></div>
+                                <div class="reviews"><span>145 Отзывов</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="room">
+                          <div class="room_img">
+                            <div class="expand_more"><span class="material-icons">chevron_left</span><span class="material-icons">chevron_right</span></div>
+                          </div>
+                          <div class="room_description">
+                            <div class="room_description_container">
+                              <div class="room_description_header">
+                                <div class="number"><span lang="en">№ 840</span><span>люкс</span></div>
+                                <div class="price"><span>9 900₽ в сутки</span></div>
+                              </div>
+                              <div class="room_description_footer">
+                                <div class="rating"></div>
+                                <div class="reviews"><span>65 Отзывов</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="room">
+                          <div class="room_img">
+                            <div class="expand_more"><span class="material-icons">chevron_left</span><span class="material-icons">chevron_right</span></div>
+                          </div>
+                          <div class="room_description">
+                            <div class="room_description_container">
+                              <div class="room_description_header">
+                                <div class="number"><span lang="en">№ 980</span><span>люкс</span></div>
+                                <div class="price"><span>8 500₽ в сутки</span></div>
+                              </div>
+                              <div class="room_description_footer">
+                                <div class="rating"></div>
+                                <div class="reviews"><span>35 Отзывов</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="room">
+                          <div class="room_img">
+                            <div class="expand_more"><span class="material-icons">chevron_left</span><span class="material-icons">chevron_right</span></div>
+                          </div>
+                          <div class="room_description">
+                            <div class="room_description_container">
+                              <div class="room_description_header">
+                                <div class="number"><span lang="en">№ 856</span><span>люкс</span></div>
+                                <div class="price"><span>7 300₽ в сутки</span></div>
+                              </div>
+                              <div class="room_description_footer">
+                                <div class="rating"></div>
+                                <div class="reviews"><span>19 Отзывов</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="room">
+                          <div class="room_img">
+                            <div class="expand_more"><span class="material-icons">chevron_left</span><span class="material-icons">chevron_right</span></div>
+                          </div>
+                          <div class="room_description">
+                            <div class="room_description_container">
+                              <div class="room_description_header">
+                                <div class="number"><span lang="en">№ 740</span><span>люкс</span></div>
+                                <div class="price"><span>6 000₽ в сутки</span></div>
+                              </div>
+                              <div class="room_description_footer">
+                                <div class="rating"></div>
+                                <div class="reviews"><span>44 Отзывов</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="room">
+                          <div class="room_img">
+                            <div class="expand_more"><span class="material-icons">chevron_left</span><span class="material-icons">chevron_right</span></div>
+                          </div>
+                          <div class="room_description">
+                            <div class="room_description_container">
+                              <div class="room_description_header">
+                                <div class="number"><span lang="en">№ 982</span><span>люкс</span></div>
+                                <div class="price"><span>5 800₽ в сутки</span></div>
+                              </div>
+                              <div class="room_description_footer">
+                                <div class="rating"></div>
+                                <div class="reviews"><span>56 Отзывов</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="room">
+                          <div class="room_img">
+                            <div class="expand_more"><span class="material-icons">chevron_left</span><span class="material-icons">chevron_right</span></div>
+                          </div>
+                          <div class="room_description">
+                            <div class="room_description_container">
+                              <div class="room_description_header">
+                                <div class="number"><span lang="en">№ 678</span><span>люкс</span></div>
+                                <div class="price"><span>5 500₽ в сутки</span></div>
+                              </div>
+                              <div class="room_description_footer">
+                                <div class="rating"></div>
+                                <div class="reviews"><span>45 Отзывов</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="room">
+                          <div class="room_img">
+                            <div class="expand_more"><span class="material-icons">chevron_left</span><span class="material-icons">chevron_right</span></div>
+                          </div>
+                          <div class="room_description">
+                            <div class="room_description_container">
+                              <div class="room_description_header">
+                                <div class="number"><span lang="en">№ 450</span><span>люкс</span></div>
+                                <div class="price"><span>5 300₽ в сутки</span></div>
+                              </div>
+                              <div class="room_description_footer">
+                                <div class="rating"></div>
+                                <div class="reviews"><span>39 Отзывов</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="room">
+                          <div class="room_img">
+                            <div class="expand_more"><span class="material-icons">chevron_left</span><span class="material-icons">chevron_right</span></div>
+                          </div>
+                          <div class="room_description">
+                            <div class="room_description_container">
+                              <div class="room_description_header">
+                                <div class="number"><span lang="en">№ 350</span><span>люкс</span></div>
+                                <div class="price"><span>5 000₽ в сутки</span></div>
+                              </div>
+                              <div class="room_description_footer">
+                                <div class="rating"></div>
+                                <div class="reviews"><span>77 Отзывов</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="room">
+                          <div class="room_img">
+                            <div class="expand_more"><span class="material-icons">chevron_left</span><span class="material-icons">chevron_right</span></div>
+                          </div>
+                          <div class="room_description">
+                            <div class="room_description_container">
+                              <div class="room_description_header">
+                                <div class="number"><span lang="en">№ 666</span><span>люкс</span></div>
+                                <div class="price"><span>5 000₽ в сутки</span></div>
+                              </div>
+                              <div class="room_description_footer">
+                                <div class="rating"></div>
+                                <div class="reviews"><span>25 Отзывов</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="room">
+                          <div class="room_img">
+                            <div class="expand_more"><span class="material-icons">chevron_left</span><span class="material-icons">chevron_right</span></div>
+                          </div>
+                          <div class="room_description">
+                            <div class="room_description_container">
+                              <div class="room_description_header">
+                                <div class="number"><span lang="en">№ 444</span><span>люкс</span></div>
+                                <div class="price"><span>5 000₽ в сутки</span></div>
+                              </div>
+                              <div class="room_description_footer">
+                                <div class="rating"></div>
+                                <div class="reviews"><span>15 Отзывов</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="room">
+                          <div class="room_img">
+                            <div class="expand_more"><span class="material-icons">chevron_left</span><span class="material-icons">chevron_right</span></div>
+                          </div>
+                          <div class="room_description">
+                            <div class="room_description_container">
+                              <div class="room_description_header">
+                                <div class="number"><span lang="en">№ 352</span><span>люкс</span></div>
+                                <div class="price"><span>5 000₽ в сутки</span></div>
+                              </div>
+                              <div class="room_description_footer">
+                                <div class="rating"></div>
+                                <div class="reviews"><span>55 Отзывов</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+          </div>
+          <div class="page_number"></div>
+        </div>
+      </div>
+    </main>
 <footer class="footer">
   <div class="footer_widgets">
     <div class="footer_widgets_container">
@@ -194,5 +639,5 @@
     </div>
   </div>
 </footer>
-  </body>
+  <script src="search-room-page.js"></script></body>
 </html>

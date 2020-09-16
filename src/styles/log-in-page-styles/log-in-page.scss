@@ -3,15 +3,14 @@
 @import '../basic-styles/colors';
 @import '../basic-styles/montserrat';
 @import '../basic-styles/opensans';
+@import '../basic-styles/quicksand';
 @import '../basic-styles/resetstyles';
 @import '../modules-styles/header';
 @import '../modules-styles/log-in-form';
 @import '../modules-styles/footer';
 
 .log_in_main {
-    max-width: 1440px;
     width: 100%;
-    margin: 0 auto;
     height: 684px;
     background-image: url(D:/Study/TOXIN/src/img/form_background.png);
     background-position: center bottom;

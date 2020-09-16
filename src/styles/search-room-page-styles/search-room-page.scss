@@ -3,5 +3,701 @@
 @import '../basic-styles/colors';
 @import '../basic-styles/montserrat';
 @import '../basic-styles/opensans';
+@import '../basic-styles/quicksand';
 @import '../basic-styles/resetstyles';
 @import '../modules-styles/header';
+@import '../modules-styles/footer';
+
+/* search_room_main */
+
+.search_room_main {
+    height: 1357px;
+    width: 100%;
+}
+
+.search_room_main_conteiner {
+    height: inherit;
+    width: 80.5556%;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* side_bar */
+
+.side_bar {
+    height: 1257px;
+    width: 22.931%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.dates_of_stay, .number_of_guests, .price_range, .availability, .room_amenities, .additional_facilities  {
+    width: 100%;
+    
+    h2 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: $darkshade100;
+    }
+
+}
+
+.dates_of_stay, .number_of_guests, .room_amenities {
+    height: 64px;   
+}
+
+.dates_of_stay {
+    margin-bottom: 20px;
+}
+
+.number_of_guests {
+    margin-bottom: 30px;
+}
+
+.price_range {
+    height: 72px;
+}
+
+.checkbox_buttons {
+    height: 129.12px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: $darkshade100;
+        margin-bottom: 16px;
+    }
+
+    .checkbox_buttons_item {
+        height: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        
+        input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            -webkit-appearance: none;
+            height: 20px;
+            width: 20px;
+            border-radius: 4px;
+            border: 1px solid $darkshade25;
+            outline: none;
+            cursor: pointer;
+        }
+
+        input:checked {
+            border: 1px solid $purple;
+        }
+
+        .check_arrow {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            visibility: hidden;
+        }
+
+        input:checked ~ .check_arrow {
+            visibility: visible;
+        }
+
+        span {
+            display: block;
+            height: 18px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 18px;
+            color: $darkshade50;
+        }
+
+    }
+
+    .checkbox_buttons_item:nth-child(2) {
+        width: 50.655%;
+
+        span {
+            width: 77.935%;
+        }
+    }
+
+    .checkbox_buttons_item:nth-child(3) {
+        width: 68.046%;
+
+        span {
+            width: 84%;
+        }
+
+    }
+
+    .checkbox_buttons_item:nth-child(4) {
+        height: 37px;
+        width: 83.459%;
+        margin-bottom: 0;
+
+        span {
+            height: 36px;
+            line-height: 18px;
+            width: 86.487%;
+        }
+
+    }
+
+}
+
+.availability {
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    h2 {
+        margin-bottom: 16px;
+    }
+
+    .availability_item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            -webkit-appearance: none;
+            height: 20px;
+            width: 20px;
+            border-radius: 4px;
+            border: 1px solid $darkshade25;
+            outline: none;
+            cursor: pointer;
+        }
+
+        input:checked {
+            border: 1px solid $purple;
+        }
+
+        .check_arrow {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            visibility: hidden;
+        }
+
+        input:checked ~ .check_arrow {
+            visibility: visible;
+        }
+        
+    }
+
+    .availability_item:nth-child(2) {
+        height: 52px;
+        width: 87.594%;
+        margin-bottom: 10px;
+
+        .availability_item_description {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 51px;
+            width: 87.125%;
+
+            p:nth-child(1) {
+                display: block;
+                height: 18px;
+                width: 70.936%;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 18px;
+                color: $darkshade75;
+            }
+    
+            p:nth-child(2) {
+                display: block;
+                height: 28px;
+                width: 100%;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 14px;
+                color: $darkshade50;
+            }
+
+        }
+
+    }
+    
+    .availability_item:nth-child(3) {
+        height: 52px;
+        width: 100%;
+
+        .availability_item_description {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 51px;
+            width: 88.722%;
+
+            p:nth-child(1) {
+                display: block;
+                height: 18px;
+                width: 86.017%;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 18px;
+                color: $darkshade75;
+            }
+    
+            p:nth-child(2) {
+                display: block;
+                height: 28px;
+                width: 100%;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 14px;
+                color: $darkshade50;
+            }    
+
+        }
+
+    }
+
+   
+}
+
+.room_amenities {
+    margin-bottom: 30px;
+}
+
+.additional_facilities {
+    height: 263px;
+
+    .additional_facilities_dropdown {
+        position: relative;
+        height: 44px;
+        width: inherit;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        h2 {
+            width: 83.4586%;
+        }
+
+        .additional_facilities_dropdown_button {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:44px;
+            width: 16.5414%;
+            background: white;
+            cursor: pointer;
+            outline: none;
+
+            span {
+                font-family: 'Material Icons';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 24px;
+                display: flex;
+                color: $darkshade50;
+            }
+        }
+
+        .additional_facilities_dropdown_button:focus, 
+        .additional_facilities_dropdown_button:active {
+            -webkit-transform: rotate(-180deg);
+            -moz-transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+            -o-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+        }
+
+    }
+
+    .additional_facilities_dropdown_button:focus + .additional_facilities_dropdown_list,
+    .additional_facilities_dropdown_button:active + .additional_facilities_dropdown_list {
+        opacity: 1.0;
+
+        input {
+            cursor: pointer;
+        }
+
+    }
+
+    .additional_facilities_dropdown_list {
+        position: absolute;
+        top: 50px;
+        height: 231px;
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        opacity: 0;
+
+        .list_item {
+            display: flex;
+            flex-direction: row;
+            height: 20px;
+    
+            input {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                -webkit-appearance: none;
+                height: 20px;
+                width: 20px;
+                border-radius: 4px;
+                border: 1px solid $darkshade25;
+                outline: none;
+                margin-right: 10px;
+            }
+    
+            input:checked {
+                border: 1px solid $purple;
+            }
+    
+            .check_arrow {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 20px;
+                height: 20px;
+                border-radius: 4px;
+                visibility: hidden;
+            }
+    
+            input:checked ~ .check_arrow {
+                visibility: visible;
+            }
+    
+            span {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 18px;
+                color: $darkshade50;
+            }
+
+        }
+
+    }
+
+    .list_item:nth-child(1) {
+        width: 33.459%;
+    }
+
+    .list_item:nth-child(2) {
+        width: 60.903%;
+    }
+
+    .list_item:nth-child(3) {
+        width: 83.459%;
+    }
+
+    .list_item:nth-child(4) {
+        width: 83.459%;
+    }
+
+    .list_item:nth-child(5) {
+        width: 40.602%;
+    }
+
+    .list_item:nth-child(6) {
+        width: 37.594%;
+    }
+
+    .list_item:nth-child(7) {
+        width: 40.602%;
+    }
+
+    .list_item:nth-child(8) {
+        width: 37.594%;
+    }
+
+}
+
+/* available_rooms */
+
+.available_rooms {
+    height: 1257px;
+    width: 71.8966%;
+}
+
+h1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: $darkshade100;
+}
+
+.list_of_rooms {
+    width: 100%;
+    height: 1091px;
+    margin-top: 21px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 1.438%;
+    row-gap: 1.925vh;
+
+    .room {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .room_img {
+        height: 150.88px;
+        width: 100%;
+        width: inherit;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: flex;
+        align-items: center;
+
+        .expand_more {
+            height: 44px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: inherit;
+                width: 16.296%;
+                color: white;
+            }
+
+        }
+
+    }
+
+    .room:nth-child(1) {
+        .room_img {
+            background: url(D:/Study/TOXIN/src/img/room_1.png);
+        }
+    }
+
+    .room:nth-child(2) {
+        .room_img {
+            background: url(D:/Study/TOXIN/src/img/room_2.png);
+        }
+    }
+
+    .room:nth-child(3) {
+        .room_img {
+            background: url(D:/Study/TOXIN/src/img/room_3.png);
+        }
+    }
+
+    .room:nth-child(4) {
+        .room_img {
+            background: url(D:/Study/TOXIN/src/img/room_4.png);
+        }
+    }
+
+    .room:nth-child(5) {
+        .room_img {
+            background: url(D:/Study/TOXIN/src/img/room_5.png);
+        }
+    }
+
+    .room:nth-child(6) {
+        .room_img {
+            background: url(D:/Study/TOXIN/src/img/room_6.png);
+        }
+    }
+
+    .room:nth-child(7) {
+        .room_img {
+            background: url(D:/Study/TOXIN/src/img/room_7.png);
+        }
+    }
+
+    .room:nth-child(8) {
+        .room_img {
+            background: url(D:/Study/TOXIN/src/img/room_8.png);
+        }
+    }
+
+    .room:nth-child(9) {
+        .room_img {
+            background: url(D:/Study/TOXIN/src/img/room_9.png);
+        }
+    }
+
+    .room:nth-child(10) {
+        .room_img {
+            background: url(D:/Study/TOXIN/src/img/room_10.png);
+        }
+    }
+
+    .room:nth-child(11) {
+        .room_img {
+            background: url(D:/Study/TOXIN/src/img/room_11.png);
+        }
+    }
+
+    .room:nth-child(12) {
+        .room_img {
+            background: url(D:/Study/TOXIN/src/img/room_12.png);
+        }
+    }
+
+    .room_description {
+        height: 106.12px;
+        width: 100%;
+        display: flex;
+        background: white;
+        
+    }
+
+    .room_description_container {
+        width: 87%;
+        height: 67px;
+        display: flex;
+        flex-direction: column; 
+        padding-top: 20px; 
+        margin-left: 20px;
+    }
+
+    .room_description_header {
+        height: 34px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        .number {
+            width: 43.348%;
+            height: 24px;
+            display: flex;
+            flex-direction: row;
+
+            span:nth-child(1) {
+                display: block;
+                width: 54.455%;
+                height: inherit;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 17px;
+                line-height: 17px;
+                color: $darkshade100;
+            }
+
+            span:nth-child(2) {
+                display: block;
+                margin-top: 7px;
+                height: 15px;
+                width: 40.594%;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 15px;
+                text-transform: uppercase;
+                color: $purple;
+            }
+
+        }
+
+        .price {
+            height: 20px;
+            width: 45%;
+
+            span {
+                display: block;
+                height: inherit;
+                width: 100%;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 18px;
+                color: $darkshade50;
+                white-space: nowrap;
+            }
+        }
+
+    }
+
+    .room_description_footer {
+        height: 33px;
+        width: 100%;
+        border-top: 1px solid rgba(31, 32, 65, 0.1);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 8px;
+
+        .rating {
+            height: 24px;
+            width: 51.17%;
+        }
+
+        .reviews {
+            height: 18px;
+            width: 38.5%;
+            margin-bottom: 3px;
+
+            span {
+                display: block;
+                height: inherit;
+                width: 100%;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 18px;
+                color: $darkshade50;
+                white-space: nowrap;
+            }
+
+        }
+    }
+
+}

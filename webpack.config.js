@@ -1,4 +1,5 @@
 const path = require('path')
+const webpack = require('webpack')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
@@ -32,7 +33,7 @@ module.exports = {
         }),
         new HTMLWebpackPlugin({
             template: './src/pages/registration-page/registration-page.pug',
-            filename: 'registration.html',
+            filename: 'registration-page.html',
             chunks: ['registration-page']
         }),
         new HTMLWebpackPlugin({
@@ -43,7 +44,7 @@ module.exports = {
         new HTMLWebpackPlugin({
             template: './src/pages/search-room-page/search-room-page.pug',
             filename: 'search-room-page.html',
-            chunks: ['sarch-room-page']
+            chunks: ['search-room-page']
         }),
         new HTMLWebpackPlugin({
             template: './src/pages/ui-kit/ui-kit.pug',
@@ -53,6 +54,11 @@ module.exports = {
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: "[name].css"
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
         })
     ],
     module: {

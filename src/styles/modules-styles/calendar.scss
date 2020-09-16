@@ -1,0 +1,95 @@
+/* calendar */
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 369px;
+    width: 320px;
+    background: white;
+}
+
+/* calendar_header */
+
+.calendar_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 24px;
+    width: 87.5%;
+
+    .current_month_and_year {
+        display: block;
+        height: inherit;
+        width: 40.72%;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 24px;
+        text-align: center;
+        white-space: nowrap;
+        color: $darkshade100;
+    }
+
+    span:first-child, span:nth-child(3) {
+        display: flex;
+        height: 24px;
+        width: 24px;
+        color: $purple;
+    }
+}
+
+/* calendar_table */
+
+.calendar_table {
+    height: 240px;
+    width: 87.5%;
+
+    th {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        color: $purple;
+    }
+}
+
+/* calendar_footer */
+
+.calendar_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 15px;
+    width: 87.5%;
+
+    p:first-child {
+        display: block;
+        height: inherit;
+        width: 52.714%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: $darkshade50;
+    }
+
+    p:nth-child(2) {
+        display: block;
+        height: inherit;
+        width: 30%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: $purple;
+    }
+}
+

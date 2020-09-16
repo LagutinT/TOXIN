@@ -109,6 +109,18 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
+/***/ "./src/scripts/calendar.js":
+/*!*********************************!*\
+  !*** ./src/scripts/calendar.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\n\r\nlet today = new Date();\r\n\r\nconsole.log(today);\r\n\r\nconsole.log(today.getDate());\n\n//# sourceURL=webpack:///./src/scripts/calendar.js?");
+
+/***/ }),
+
 /***/ "./src/scripts/ui-kit.js":
 /*!*******************************!*\
   !*** ./src/scripts/ui-kit.js ***!
@@ -117,7 +129,7 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_ui_kit_styles_ui_kit_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/ui-kit-styles/ui-kit.scss */ \"./src/styles/ui-kit-styles/ui-kit.scss\");\n/* harmony import */ var _styles_ui_kit_styles_ui_kit_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_ui_kit_styles_ui_kit_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/scripts/ui-kit.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_ui_kit_styles_ui_kit_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../styles/ui-kit-styles/ui-kit.scss */ \"./src/styles/ui-kit-styles/ui-kit.scss\");\n/* harmony import */ var _styles_ui_kit_styles_ui_kit_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_ui_kit_styles_ui_kit_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _scripts_calendar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scripts/calendar */ \"./src/scripts/calendar.js\");\n/* harmony import */ var _scripts_calendar__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scripts_calendar__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\n\n//# sourceURL=webpack:///./src/scripts/ui-kit.js?");
 
 /***/ }),
 

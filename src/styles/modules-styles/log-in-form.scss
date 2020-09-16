@@ -1,7 +1,5 @@
 /* log_in_form */
 
-@import '../basic-styles/colors';
-
 .log_in_form {
     width: 32.76%;
     height: 358px;
@@ -16,7 +14,7 @@
     padding-bottom: 32px;
 }
 
-.log_in_form_title, .log_in_form_name, .log_in_form_pass, .log_in_form_input_button {
+.log_in_form_title, .log_in_form_mail, .log_in_form_pass, .log_in_form_input_button {
     display: flex;
     width: 84.65%;
     height: 44px;
@@ -37,9 +35,9 @@
     }
 }
 
-.log_in_form_name,  .log_in_form_pass{
+.log_in_form_mail,  .log_in_form_pass{
     background: white;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1px solid $darkshade25;
     box-sizing: border-box;
     border-radius: 4px;
     padding-left: 15px;
@@ -48,16 +46,17 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.25);
+    color: $darkshade25;
+    outline: none;
 }
 
-.log_in_form_name::placeholder, .log_in_form_pass::placeholder {
+.log_in_form_mail::placeholder, .log_in_form_pass::placeholder {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.25);
+    color: $darkshade25;
 }
 
 .log_in_form_pass {
@@ -71,6 +70,7 @@
     justify-content: flex-end;
     border-radius: 22px;
     align-items: center;
+    cursor: pointer;
 
     a {
         display: block;
@@ -94,6 +94,10 @@
         width: 13.75%;
         color: white;
     }
+}
+
+.log_in_form_input_button:hover {
+    opacity: 0.5;
 }
 
 .log_in_form_footer {
@@ -126,6 +130,7 @@
         border: 2px solid $purple;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
         
         a {
             text-transform: uppercase;
@@ -136,6 +141,10 @@
             line-height: 15px;
             color: $purple;
         }
+    }
+
+    .log_in_form_footer_create_button:hover {
+        opacity: 0.5;
     }
 
 }
