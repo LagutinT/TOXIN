@@ -1,0 +1,183 @@
+/* room */
+
+.room {
+    display: flex;
+    flex-direction: column;
+}
+
+.room_img {
+    height: 150.88px;
+    width: 100%;
+    width: inherit;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .expand_more {
+        height: 44px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: inherit;
+            width: 16.296%;
+            color: white;
+        }
+
+    }
+
+    .slider {
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 15.28%;
+        height: 7.49px;
+
+        .slider_ellipse {
+            display: block;
+            height: 100%;
+            width: 18.2%;
+        }
+
+    }
+
+}
+
+.room_description {
+    height: 106.12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    
+}
+
+.room_description_container {
+    width: 85.2%;
+    height: 66.12px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.room_description_header {
+    height: 24px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+
+    .number {
+        width: 43.92%;
+        height: 24px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        span:first-child {
+            display: flex;
+            align-items: center;
+            width: 54.455%;
+            height: 100%;
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 17px;
+            color: $darkshade100;
+        }
+
+        .number_comfort_level {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2px;
+            height: 15px;
+            width: 40.594%;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            text-transform: uppercase;
+            color: $purple;
+        }
+
+    }
+
+    .price {
+        height: 20px;
+        width: 56.09%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        color: $darkshade50;
+        white-space: nowrap;
+    }
+
+}
+
+.room_description_footer {
+    height: 33px;
+    width: 100%;
+    border-top: 1px solid rgba(31, 32, 65, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+
+    .rating {
+        display: flex;
+        flex-direction: row;
+        height: 24px;
+        width: 52.17%;
+
+        .rating_star {
+            display: flex;
+            height: 100%;
+            width: 20%;
+            background: red;
+        }
+
+    }
+
+    .assigned_star {
+        background: url(D:/Study/TOXIN/src/img/star.png);
+    }
+
+    .not_assigned_star {
+        background: url(D:/Study/TOXIN/src/img/star_border.png);
+    }
+
+    .reviews {
+        display: flex;
+        justify-content: flex-end;
+        height: 18px;
+        width: 47.83%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        color: $darkshade50;
+        white-space: nowrap;
+    }
+}

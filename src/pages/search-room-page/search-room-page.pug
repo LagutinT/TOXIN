@@ -8,7 +8,7 @@ html(lang="ru")
     body
         include ../modules/header
         main.search_room_main
-            .search_room_main_conteiner
+            .search_room_main_container
                 .side_bar
                     mixin checkbox
                             input(type="checkbox")
@@ -24,6 +24,7 @@ html(lang="ru")
                         h2 даты пребывания в отеле
                     .number_of_guests
                         h2 гости
+                        include ../modules/guests-dropdown
                     .price_range
                         h2 диапазон цены
                     .checkbox_buttons
@@ -84,35 +85,18 @@ html(lang="ru")
                 .available_rooms
                     h1 Номера, которые мы для вас подобрали
                     .list_of_rooms
-                        mixin room(number, price, users_reviews)
-                            .room
-                                .room_img
-                                    .expand_more
-                                        span(class="material-icons") chevron_left
-                                        span(class="material-icons") chevron_right
-                                .room_description
-                                    .room_description_container
-                                        .room_description_header
-                                            .number
-                                                span(lang="en")= number 
-                                                span люкс
-                                            .price
-                                                span= price
-                                        .room_description_footer
-                                            .rating
-                                            .reviews
-                                                span= users_reviews
-                        +room('№ 888', '9 990₽ в сутки', '145 Отзывов')
-                        +room('№ 840', '9 900₽ в сутки', '65 Отзывов')
-                        +room('№ 980', '8 500₽ в сутки', '35 Отзывов')
-                        +room('№ 856', '7 300₽ в сутки', '19 Отзывов')
-                        +room('№ 740', '6 000₽ в сутки', '44 Отзывов')
-                        +room('№ 982', '5 800₽ в сутки', '56 Отзывов')
-                        +room('№ 678', '5 500₽ в сутки', '45 Отзывов')
-                        +room('№ 450', '5 300₽ в сутки', '39 Отзывов')
-                        +room('№ 350', '5 000₽ в сутки', '77 Отзывов')
-                        +room('№ 666', '5 000₽ в сутки', '25 Отзывов')
-                        +room('№ 444', '5 000₽ в сутки', '15 Отзывов')
-                        +room('№ 352', '5 000₽ в сутки', '55 Отзывов')
+                        include ../modules/room
+                        +room('№ 888', '9 990₽ в сутки', '145 Отзывов', '5')
+                        +room('№ 840', '9 900₽ в сутки', '65 Отзывов', '4')
+                        +room('№ 980', '8 500₽ в сутки', '35 Отзывов', '3')
+                        +room('№ 856', '7 300₽ в сутки', '19 Отзывов', '5')
+                        +room('№ 740', '6 000₽ в сутки', '44 Отзывов', '4')
+                        +room('№ 982', '5 800₽ в сутки', '56 Отзывов', '3')
+                        +room('№ 678', '5 500₽ в сутки', '45 Отзывов', '5')
+                        +room('№ 450', '5 300₽ в сутки', '39 Отзывов', '4')
+                        +room('№ 350', '5 000₽ в сутки', '77 Отзывов', '3')
+                        +room('№ 666', '5 000₽ в сутки', '25 Отзывов', '5')
+                        +room('№ 444', '5 000₽ в сутки', '15 Отзывов', '3')
+                        +room('№ 352', '5 000₽ в сутки', '55 Отзывов', '3')
                     .page_number
         include ../modules/footer

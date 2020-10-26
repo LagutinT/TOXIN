@@ -7,6 +7,8 @@
 @import '../basic-styles/resetstyles';
 @import '../modules-styles/header';
 @import '../modules-styles/footer';
+@import '../modules-styles/room';
+@import '../modules-styles/guests_dropdown';
 
 /* search_room_main */
 
@@ -15,7 +17,7 @@
     width: 100%;
 }
 
-.search_room_main_conteiner {
+.search_room_main_container {
     height: inherit;
     width: 80.5556%;
     max-width: 1160px;
@@ -65,6 +67,7 @@
 
 .price_range {
     height: 72px;
+    z-index: 1;
 }
 
 .checkbox_buttons {
@@ -72,6 +75,7 @@
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
+    z-index: 1;
 
     h2 {
         font-family: 'Montserrat';
@@ -106,6 +110,7 @@
 
         input:checked {
             border: 1px solid $purple;
+            cursor: pointer;
         }
 
         .check_arrow {
@@ -117,10 +122,12 @@
             height: 20px;
             border-radius: 4px;
             visibility: hidden;
+            cursor: pointer;
         }
 
         input:checked ~ .check_arrow {
             visibility: visible;
+            cursor: pointer;
         }
 
         span {
@@ -198,6 +205,7 @@
 
         input:checked {
             border: 1px solid $purple;
+            cursor: pointer;
         }
 
         .check_arrow {
@@ -209,10 +217,12 @@
             height: 20px;
             border-radius: 4px;
             visibility: hidden;
+            cursor: pointer;
         }
 
         input:checked ~ .check_arrow {
             visibility: visible;
+            cursor: pointer;
         }
         
     }
@@ -327,6 +337,7 @@
             background: white;
             cursor: pointer;
             outline: none;
+            transition: all 1s ease-out;
 
             span {
                 font-family: 'Material Icons';
@@ -339,23 +350,12 @@
             }
         }
 
-        .additional_facilities_dropdown_button:focus, 
-        .additional_facilities_dropdown_button:active {
+        .rotate {
             -webkit-transform: rotate(-180deg);
             -moz-transform: rotate(-180deg);
             -ms-transform: rotate(-180deg);
             -o-transform: rotate(-180deg);
             transform: rotate(-180deg);
-        }
-
-    }
-
-    .additional_facilities_dropdown_button:focus + .additional_facilities_dropdown_list,
-    .additional_facilities_dropdown_button:active + .additional_facilities_dropdown_list {
-        opacity: 1.0;
-
-        input {
-            cursor: pointer;
         }
 
     }
@@ -368,7 +368,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        opacity: 0;
+        display: none;
 
         .list_item {
             display: flex;
@@ -386,10 +386,12 @@
                 border: 1px solid $darkshade25;
                 outline: none;
                 margin-right: 10px;
+                cursor: pointer;
             }
     
             input:checked {
                 border: 1px solid $purple;
+                cursor: pointer;
             }
     
             .check_arrow {
@@ -401,10 +403,12 @@
                 height: 20px;
                 border-radius: 4px;
                 visibility: hidden;
+                cursor: pointer;
             }
     
             input:checked ~ .check_arrow {
                 visibility: visible;
+                cursor: pointer;
             }
     
             span {
@@ -480,40 +484,6 @@ h1 {
     column-gap: 1.438%;
     row-gap: 1.925vh;
 
-    .room {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .room_img {
-        height: 150.88px;
-        width: 100%;
-        width: inherit;
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        display: flex;
-        align-items: center;
-
-        .expand_more {
-            height: 44px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-
-            span {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: inherit;
-                width: 16.296%;
-                color: white;
-            }
-
-        }
-
-    }
-
     .room:nth-child(1) {
         .room_img {
             background: url(D:/Study/TOXIN/src/img/room_1.png);
@@ -583,120 +553,6 @@ h1 {
     .room:nth-child(12) {
         .room_img {
             background: url(D:/Study/TOXIN/src/img/room_12.png);
-        }
-    }
-
-    .room_description {
-        height: 106.12px;
-        width: 100%;
-        display: flex;
-        background: white;
-        
-    }
-
-    .room_description_container {
-        width: 87%;
-        height: 67px;
-        display: flex;
-        flex-direction: column; 
-        padding-top: 20px; 
-        margin-left: 20px;
-    }
-
-    .room_description_header {
-        height: 34px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 10px;
-
-        .number {
-            width: 43.348%;
-            height: 24px;
-            display: flex;
-            flex-direction: row;
-
-            span:nth-child(1) {
-                display: block;
-                width: 54.455%;
-                height: inherit;
-                font-family: 'Open Sans';
-                font-style: normal;
-                font-weight: bold;
-                font-size: 17px;
-                line-height: 17px;
-                color: $darkshade100;
-            }
-
-            span:nth-child(2) {
-                display: block;
-                margin-top: 7px;
-                height: 15px;
-                width: 40.594%;
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: bold;
-                font-size: 12px;
-                line-height: 15px;
-                text-transform: uppercase;
-                color: $purple;
-            }
-
-        }
-
-        .price {
-            height: 20px;
-            width: 45%;
-
-            span {
-                display: block;
-                height: inherit;
-                width: 100%;
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: bold;
-                font-size: 14px;
-                line-height: 18px;
-                color: $darkshade50;
-                white-space: nowrap;
-            }
-        }
-
-    }
-
-    .room_description_footer {
-        height: 33px;
-        width: 100%;
-        border-top: 1px solid rgba(31, 32, 65, 0.1);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-bottom: 8px;
-
-        .rating {
-            height: 24px;
-            width: 51.17%;
-        }
-
-        .reviews {
-            height: 18px;
-            width: 38.5%;
-            margin-bottom: 3px;
-
-            span {
-                display: block;
-                height: inherit;
-                width: 100%;
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: bold;
-                font-size: 14px;
-                line-height: 18px;
-                color: $darkshade50;
-                white-space: nowrap;
-            }
-
         }
     }
 

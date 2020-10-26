@@ -1,0 +1,204 @@
+/* guests_dropdown */
+
+.guests_dropdown {
+    display: flex;
+    flex-direction: column;
+    height: 203px;
+    width: 100%;
+}
+
+.guests_dropdown_field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 44px;
+    width: 100%;
+    position: relative;
+    background: white;
+    border: 1px solid $darkshade50;
+    border-radius: 2px;
+
+    .guests_count {
+        display: flex;
+        height: 18px;
+        width: 35.5%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: $darkshade75;
+        position: absolute;
+        left: 15px;
+        white-space: nowrap;
+    }
+
+    .field_button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 13.75%;
+        position: absolute;
+        right: 0;
+        font-family: 'Material Icons';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
+        color: $darkshade75;
+        cursor: pointer;
+        transition: all 1s ease;
+    }
+    
+    .transform {
+        transform: rotate(180deg);
+    } 
+
+}
+
+.guests_dropdown_list {
+    display: flex;
+    flex-direction: column;
+    height: 159px;
+    width: 100%;
+    background: white;
+    border: 1px solid $darkshade50;
+    border-radius: 2px;
+    box-shadow: 0px 10px 20px $darkshade5;
+    z-index: 2;
+    visibility: hidden;
+
+    .list_item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 30px;
+        width: 100%;
+        position: relative;
+
+        .item_name {
+            display: flex;
+            align-items: center;
+            height: 15px;
+            width: 31.44%;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            text-transform: uppercase;
+            color: $darkshade100;
+            position: absolute;
+            left: 15px;
+        }
+
+        .item_calculator {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 30px;
+            width: 34.59%;
+            position: absolute;
+            right: 7px;
+
+            .calculator_minus, .calculator_plus {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 30px;
+                width: 32.61%;
+                border: 1px solid $darkshade25;
+                box-sizing: border-box;
+                border-radius: 22px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 22px;
+                color: $darkshade50;
+                cursor: pointer;
+            }
+
+            .calculator_value {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 30px;
+                width: 34.78%;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 15px;
+                text-align: center;
+                text-transform: uppercase;
+                color: $darkshade100;
+            }
+
+        }
+
+    }
+
+    .list_item:first-child {
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+
+    .list_item:nth-child(2) {
+        margin-bottom: 7px; 
+    }
+
+    .list_item:nth-child(3) {
+        margin-bottom: 20px;
+    }
+
+    .list_footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 15px;
+        width: 100%;
+        position: relative;
+
+        .footer_button_clear {
+            display: flex;
+            height: 15px;
+            width: 27.1%;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            text-transform: uppercase;
+            color: $purple;
+            position: absolute;
+            left: 14px;
+            cursor: pointer;
+        }
+    
+        .footer_button_apply {
+            display: flex;
+            height: 15px;
+            width: 31.6%;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            text-transform: uppercase;
+            color: $purple;
+            position: absolute;
+            right: 7px;  
+            cursor: pointer;
+        }
+
+    }
+
+}
+
+.visible {
+    visibility: visible;
+}
